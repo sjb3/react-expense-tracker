@@ -23,21 +23,26 @@ body {
 
 .container {
   margin: 20px auto;
-  width: 450px;
-  /* box-shadow: 10px 10px 8px 10px #eaeaea;
-  padding: 10px 20px;
-  background: white; */
+  /* width: 800px; */
+  width: 50vw;
+  border: 1px solid #eaeaea;
+  box-shadow: 10px 10px 8px 10px #eaeaea;
+  padding: 10px;
+  /* background: white; */
 }
 
 .income-expenses {
   background-color: #fff;
   /* box-shadow: var(--box-shadow); */
-  box-shadow: 10px 10px 8px 10px #eaeaea;
+  /* box-shadow: 10px 10px 8px 10px #eaeaea; */
   padding: 20px;
   display: flex;
   /* flex-direction: row; */
   justify-content: space-between;
   margin: 20px 0;
+
+  border: 1px solid #dedede;
+  border-radius: 2px;
 }
 
 .income-expenses > div {
@@ -47,6 +52,10 @@ body {
 
 .income-expenses > div:first-of-type {
   border-right: 1px solid #dedede;
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 h4 {
@@ -93,6 +102,9 @@ h3 {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+
+  border: 1px solid #dedede;
+  border-radius: 2px;
 }
 
 .list li.plus {
@@ -103,13 +115,87 @@ h3 {
   border-right: 5px solid #c0392b;
 }
 
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.list span.minus {
+  color: #c0392b;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.list span.plus {
+  color: #2ecc71;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* .money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+} */
+
+label {
+  display: inline-block;
+  margin: 10px 10px;
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 1.3em;
+  margin: 10px 0 30px;
+  padding: 1em;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 /*
-
-
-/*
-
-
-
 
 
 h1 {
