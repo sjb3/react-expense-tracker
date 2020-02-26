@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const H1 = styled.h2`
+export const H1 = styled.h1`
   font-family: "Lobster";
-  font-size: 2em;
+  font-size: 3em;
 `;
