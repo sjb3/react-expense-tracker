@@ -13,7 +13,7 @@ connectDB();
 const app = express();
 const transactions = require("./routes/transactions");
 
-// app.use(express.json()); // enables to use bodyParser
+app.use(express.json()); // enables to use bodyParser
 app.use("/api/v1/transactions", transactions);
 
 const PORT = process.env.PORT || 5000;
