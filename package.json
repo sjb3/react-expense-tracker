@@ -1,15 +1,14 @@
 {
-  "name": "react-expense-tracker-mern",
+  "name": "react-expense-tracker",
   "version": "1.0.0",
-  "description": "Back end for expense tracker",
+  "description": "Back end for react-expense-tracker",
   "main": "server.js",
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
-  },
   "repository": "https://github.com/sjb3/react-expense-tracker.git",
   "author": "Justin Byun <klofseattle@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
