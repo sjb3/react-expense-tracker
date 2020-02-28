@@ -13,7 +13,7 @@ connectDB();
 const app = express();
 const transactions = require("./routes/transactions");
 
-app.use(express.json()); // enables to use bodyParser
+// app.use(express.json()); // enables to use bodyParser
 app.use("/api/v1/transactions", transactions);
 
 const PORT = process.env.PORT || 5000;
@@ -21,6 +21,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(
   PORT,
   console.log(
-    `Server runing in ${process.env.NODE_ENV} mode on port ${PORT}`.bgMagenta
+    `Server runing in ${process.env.NODE_ENV} mode on port ${PORT}`.bgWhite.red
+      .bold
   )
 );
